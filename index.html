@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1 class="text-center">TIP CALCULATOR</h1>
+        <label>How much was your bill ?</label>
+        <div class="form-group">
+            <input type="number" value="" class="form-control" id="bill" name="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">How Many People Sharing The Bill ?</label>
+            <input type="number" value="" class="form-control" id="person" name="pswd">
+        </div>
+        <div class="form-group">
+            <label for="pwd">How Was Your Service ?</label>
+            <select class="form-control form-control-sm" id="service">
+                <h5>How was your Service ?</h5>
+                <option>Choose..</option>
+                <option value="great">Great - 20%</option>
+                <option value="good">Good - 10%</option>
+                <option value="bad">Bad - 2%</option>
+              </select>
+        </div>
+        
+        </div>
+        <button class="btn btn-primary mx-auto d-block w-25" id="btn">Calculate</button>
+        <h1 id="tip" class="text-center mt-5"></h1>
+        <h1 id="perPerson" class="text-center"></h1>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
